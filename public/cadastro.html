@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+</head>
+
+<body>
+    <div id="myModal">
+        <h1>Entre em contato</h1>
+
+        <div>
+            <span id="mensagemErro"></span>
+            <label for="nomes">Nome e Sobrenome:</label>
+            <input type="text" id="nomes" class="input-padrao" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="seuemail@dominio.com" class="input-padrao" required />
+
+            <label for="telefone">Telefone celular:</label>
+            <input type="text" id="telefone" class="input-padrao" required placeholder="(00) 90000-0000" />
+            <input type="submit" onclick="validacao()" value="Cadastre-se" class="btnblue" />
+            <p><a style="color: black" href="login.html"><-voltar a tela de login</a></p>
+            
+            <div class="msg_confirmacao" id="confirmacao" style="display: none">
+                <p class="text_padrao">Cadastro efetuado!</p>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+                <lottie-player
+                    src="https://assets8.lottiefiles.com/datafiles/8UjWgBkqvEF5jNoFcXV4sdJ6PXpS6DwF7cK4tzpi/Check Mark Success/Check Mark Success Data.json"
+                    background="transparent" speed="0.5" style="width: 50px; height: 50px;" loop autoplay>
+                </lottie-player>
+            </div>
+
+        </div>
+    </div>
+    <div class="animation">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_u8o7BL.json" mode="bounce"
+            background="transparent" speed="1.1" style="width: 400px; height: 400px; margin-top: 0%;" loop autoplay>
+        </lottie-player>
+    </div>
+
+    <div class="nav-voltar">
+        <img class="img-voltar" onclick="voltar()" src="img/voltar.png" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+body{
+    margin: 0px;
+    background-color: #216a6d;
+}
+.container {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.titulo{
+    font-size: 25px;
+    font-family: lora;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.nav-voltar{
+    height: 10%;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+}
+.menu a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.img-voltar{
+    z-index: 3;
+    height: 45px;
+    width: 170px;
+    margin-top: 0.7%;
+    margin-right: 1%;
+    float: right;
+}
+.cards{
+    width: 100%;
+    background-color: lightgray;
+    float: right;
+}
+.cards-img{
+    width: 100%;
+    background-color: gray;
+}
+.cards-img img{
+    width: 450px;
+    padding: 20px;
+}
+.cards img{
+    width: 450px;
+    padding: 20px;
+}
+.text{
+    float: right;
+    padding: 50px;
+    width: 50%;
+    font-size: 20px;
+}
+.text-two{
+    float: left;
+    padding: 50px;
+    width: 50%;
+    font-size: 20px;
+}

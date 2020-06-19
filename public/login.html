@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+</head>
+
+<body>
+    <div id="myModal">
+        <h1>Entre em contato</h1>
+        <div>
+            <span id="mensagemErro"></span>
+            <form class="" id="form_login" method="post" onsubmit="return entrar()">
+                Usuário: <input class="input-padrao" type="text" name="login">
+                <br>
+                Senha: <input class="input-padrao" type="password" name="senha">
+                <br>
+                <button
+                    style="margin-top: 27.5%;height:35px;font-size: 20px;width: 12%;padding: 0PX; background-color: rgb(17, 53, 54);"
+                    id="btn_entrar">LOGIN</button><br><br>
+                <p style="font-size: 12px;">Ainda não possui um login?</p>
+                <input style="height:17px;width: 26.5%" onclick="abrircadastro()" value="Cadastre-se" class="btnblue" />
+            </form>
+
+            <div style="display: none" id="confirmacaoLogin">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets10.lottiefiles.com/datafiles/umnoQtuTsfkcOH7/data.json"
+                    background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                </lottie-player>
+            </div>
+            <div style="display: none" id="loginErrado">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kcQcSB.json" background="transparent"
+                    speed="0.8" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                </lottie-player>
+            </div>
+        </div>
+    </div>
+    <div class="animation">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_u8o7BL.json" mode="bounce"
+            background="transparent" speed="1.1" style="width: 400px; height: 400px; margin-top: 0%;" loop autoplay>
+        </lottie-player>
+    </div>
+
+    <div class="nav-voltar">
+        <img class="img-voltar" onclick="voltar()" src="img/voltar.png" alt="">
+    </div>
+</body>
+
+</html>
+<script>
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+                document.getElementById("confirmacaoLogin").style.display = "block";
+
+                setInterval(function () {
+
+
+                    resposta.json().then(json => {
+                        sessionStorage.login_usuario_meuapp = json.login;
+                        sessionStorage.nome_usuario_meuapp = json.senha;
+
+                        window.location.href = 'gostos.html';
+                    });
+                }, 5000);
+
+            } else {
+
+                alert('Erro de login!');
+                document.getElementById("loginErrado").style.display = "block";
+                setInterval(function () {
+
+                    
+                    document.getElementById("loginErrado").style.display = "none";
+                    response.text().then(texto => {
+                        console.error(texto);
+                        
+                    });
+                   
+                }, 5000);
+
+
+            }
+        });
+
+        return false;
+    }
+</script>

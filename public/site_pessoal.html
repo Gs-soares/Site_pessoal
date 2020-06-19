@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+
+
+
+    <title>Soares</title>
+</head>
+
+<body>
+    <section class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#gostos">Gostos</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+        <footer class="rodape">Desenvolvido por <br> Guilherme Soares</footer>
+    </section>
+
+
+    <section id="home" class="container">
+        <div class="conteudo">
+            <div class="first-card">
+                <p class="text-apresentacao">Bem <span style="color: rgb(33, 106, 109)">Vindo</span></p><br>
+                <p class="text-padrao"> Esse é meu site pessoal, cadastre-se para mais informações</p>
+                <a href="login.html" class="button_style">Login</a>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </section>
+    <br>
+    <section id="sobre" class="container">
+        <div class="conteudo">
+            <div class="second-card">
+                <p class="text-apresentacao">Guilherme <span style="color: rgb(33, 106, 109)">Soares</span></p>
+                <p class="text-padrao">
+                    Eu tenho 18 anos, sou apaixonado por musica, esportes, futebol, programação e acima de tudo
+                    tecnologia.<br>
+                    Quando criança sempre fui muito curioso, sempre queria saber como funcionavam as coisas e isso que
+                    me fez ter um interesse grande por programação, e hoje em dia eu amo o que eu estou aprendendo e
+                    mesmo com as dificuldades me vejo fazendo isso pelo resto da minha vida.
+                    Bom tudo isso me levou a faculdade e é o que me fez fazer esse site sobre mim, espero que gostem!
+                </p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="gostos" class="container">
+        <div class="conteudo">
+            <div class="third-card">
+                <p class="text-apresentacao">Principais <span style="color: rgb(33, 106, 109)">Gostos</span></p><br>
+            </div>
+
+            <div id="slider">
+                <div id="box">
+                    <img src="img/a.jpg">
+                </div>
+
+                <button class="prew" onclick="prewImage()"><</button> 
+                <button class="next" onclick="nextImage()">></button>
+                <br>
+                <a href="login.html" class="saiba_mais">Saiba mais</a>
+            </div>
+
+
+        </div>
+    </section>
+    <br>
+    <section id="hobbies" class="container">
+        <div class="conteudo">
+            <div class="fourth-card">
+                <p class="text-apresentacao">Principais <span style="color: rgb(33, 106, 109)">Hobbies</span></p>
+            </div>
+
+            <div class="main-cards">
+                <img class="cards" src="https://image.flaticon.com/icons/svg/1642/1642563.svg" alt="">
+                <img class="cards" src="img/bike.png" alt="">
+                <img class="cards" src="img/pesca.png" alt="">
+                <img class="cards" src="img/programacao.png" alt="">
+                <img class="cards" src="img/cinema.png" alt="">
+                <img class="cards" src="img/viajar.png" alt="">
+                <img class="cards" src="img/basket.png" alt="">
+                <img class="cards" src="img/escrever.png" alt="">
+            </div>
+
+
+        </div>
+    </section>
+
+    <p class="footer">Para mais informações mande um e-mail para guilherme_castro2002@hotmail.com</p>
+
+</body>
+
+</html>
+
+<script>
+    var slider_content = document.getElementById('box');
+    var imagem = ['img/a', 'img/b', 'img/c', 'img/d', 'img/e', 'img/f'];
+    var i = imagem.length;
+
+    function nextImage() {
+        if (i < imagem.length) {
+            i = i + 1;
+        } else {
+            i = 1;
+        }
+        slider_content.innerHTML = "<img src=" + imagem[i - 1] + ".jpg>";
+    }
+
+    function prewImage() {
+        if (i < imagem.length + 1 && i > 1) {
+            i = i - 1;
+        } else {
+            i = imagem.length;
+        }
+        slider_content.innerHTML = "<img src=" + imagem[i - 1] + ".jpg>";
+    }
+</script>

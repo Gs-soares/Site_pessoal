@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+body{
+    background-color:  rgba(0, 0, 0, 0.2);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    padding: 20px;
+    border: none;
+    background:  rgb(33, 106, 109);
+    font-size: 30px;
+    color: white;
+    position: absolute;   
+    top: 0%;
+}
+img{
+    width: 600px;
+    height: 300px;
+}
+h1{
+    margin-left: 40px;
+}
+
+
+.main-contato{
+    margin: auto;
+    width: 85%;
+}
+.main-contato h1{
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao{
+    display: block;
+    padding: 10px 25px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.container{
+    width: 85%;
+    margin: auto;
+    float: right;
+    clear: both;
+    margin-right: 1%
+}
+
+.menu{
+    text-align: justify;
+    background-color:rgb(26, 30, 32);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    height: 100%;
+    width: 12%;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+    display: flex;    
+}
+
+.menu li{
+    display: grid;
+    margin-bottom: 25px; 
+    text-decoration: none;    
+    font-size: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.conteudo{
+    height: 100vh;
+    width: 100%;
+}
+.first-card{
+    height: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 3%;
+}
+.button_style{
+    border-radius: 20px;
+    margin-left: 2%;
+    height: 7px;
+    line-height: 7px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    width: 160px;
+    font-size: 29px;
+    font-weight: 100;
+    padding: 40px;
+    background-color: rgb(33, 106, 109);
+    border: solid rgb(33, 106, 109) 1px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+.saiba_mais{
+    border-radius: 20px;
+    margin-left: 27%;
+    height: 7px;
+    line-height: 7px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    width: 160px;
+    font-size: 29px;
+    font-weight: 100;
+    padding: 40px;
+    background-color: rgb(33, 106, 109);
+    border: solid rgb(33, 106, 109) 1px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+.btnblue{
+    background-color: rgb(17, 53, 54);
+    border: none;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.second-card{
+    height: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 3%;
+}
+.third-card{
+    height: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 3%;
+    margin-bottom: -28%;
+}
+.fourth-card{
+    height: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 3%;
+    margin-bottom: -28%;
+}
+.text-apresentacao{
+    font-family: 'Anton';
+    font-size: 90px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.text-padrao{
+    font-size: 20px;
+    text-align: justify;
+    width: 85%;
+    margin-top: 3%;
+    margin-left: 20px;
+}
+.animation{
+    float: right;
+    margin-right: 12%;
+    margin-top: 7%;
+}
+.btnclose{
+    float: right;
+    margin-left: 51%;
+    color: black;
+    border-radius: 50%;
+}
+
+.next{
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 600px;
+    height: 99.5%;
+}
+.prew{
+    border-radius: 10px 0px 0px 10px;
+    margin-left: -57px;
+    height: 99.5%;
+}
+.rodape{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 377%;
+    margin-left: -52%;
+}
+.footer{
+    margin-left: 13%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.cards{
+    height: 14%;
+    width: 20%;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.cards:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.main-cards{
+    margin-left: 9%;
+}
+.msg_confirmacao{
+    width: 40%;
+    margin-top: 3%;
+}
+.nav-voltar{
+    height: 10%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 43.5%
+}
+.img-voltar{
+    z-index: 3;
+    height: 45px;
+    width: 170px;
+    margin-top: 0.7%;
+    margin-right: 1%;
+    float: right;
+}
+#myModal{
+    padding: 22px;
+    margin: 10px 0;
+    width: 40%;
+    float: left;
+    margin-left: 40px;
+    margin-top: 6%;
+}
+#dev{
+    font-size: 12px;
+    color: white;
+    margin-top: 400%;
+    text-align: center;
+}
+#slider{
+    width: 690px;
+    height: 301px;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+#home{
+    height: 100vh;
+    width: 88%;
+    margin: 0;
+    background-image: url("https://www.topensandoemviajar.com/wp-content/uploads/2017/11/onde-ficar-em-sp-feat.jpg");
+}
+#sobre{
+    height: 100vh;
+    width: 88%;
+    margin: 0;
+    background-image: url("https://www.topensandoemviajar.com/wp-content/uploads/2017/11/onde-ficar-em-sp-feat.jpg");
+}
+#gostos{
+    height: 100vh;
+    width: 88%;
+    margin: 0;
+    background-image: url("https://www.topensandoemviajar.com/wp-content/uploads/2017/11/onde-ficar-em-sp-feat.jpg");
+}
+#hobbies{
+    height: 100vh;
+    width: 88%;
+    margin: 0;
+    background-image: url("https://www.topensandoemviajar.com/wp-content/uploads/2017/11/onde-ficar-em-sp-feat.jpg");
+}
